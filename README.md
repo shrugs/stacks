@@ -6,6 +6,8 @@ If you'd like to actually develop this tweak, feel free to re-use all of this co
 
 If you'd like a compiled deb, checkout [my repo](http://cydia.myrepospace.com/MattCMultimedia)
 
+If you're using my code exactly with minimal changes, it'd be nice of you to not sell it, though.
+
 It's missing a few features:
 - stack re-ordering
 - custom root icon styling (making it look like a stack of icons, ala android folders)
