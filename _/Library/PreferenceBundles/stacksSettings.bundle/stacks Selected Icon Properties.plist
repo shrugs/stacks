@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+    <array>
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>Usage</string>
+            <key>footerText</key>
+            <string>Icon Peek helps identify the currently selected icon by moving it to the side.</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSSwitchCell</string>
+            <key>default</key>
+            <true/>
+            <key>defaults</key>
+            <string>com.mattcmultimedia.stacks</string>
+            <key>key</key>
+            <string>iconPeek</string>
+            <key>label</key>
+            <string>Icon Peek</string>
+            <key>postNotification</key>
+            <string>com.mattcmultimedia.stacks/reload</string>
+        </dict>
+
+
+        <!-- right/left handed -->
+        <dict>
+            <key>cell</key>
+            <string>PSLinkListCell</string>
+            <key>default</key>
+            <integer>1</integer>
+            <key>defaults</key>
+            <string>com.mattcmultimedia.stacks</string>
+            <key>detail</key>
+            <string>PSListItemsController</string>
+            <key>key</key>
+            <string>rightHanded</string>
+            <key>label</key>
+            <string>Handedness</string>
+            <key>validTitles</key>
+            <array>
+                <string>Right Handed</string>
+                <string>Left Handed</string>
+                </array>
+            <key>validValues</key>
+            <array>
+                <integer>1</integer>
+                <integer>0</integer>
+            </array>
+            <key>postNotification</key>
+            <string>com.mattcmultimedia.stacks/reload</string>
+        </dict>
+
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>The following settings can normally be found in stacks>stacks Aesthetics>stacks Curve Settings.</string>
+            <key>footerText</key>
+            <string>They are duplicated here for your convenience.</string>
+        </dict>
+
+        <!-- duplicate of Aesthetics -->
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>stacks Highlight Opacity</string>
+            <key>footerText</key>
+            <string>This setting only takes effect if Curve stacks is ON.</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSSliderCell</string>
+            <key>default</key>
+            <real>0.7</real>
+            <key>defaults</key>
+            <string>com.mattcmultimedia.stacks</string>
+            <key>min</key>
+            <real>0</real>
+            <key>max</key>
+            <real>1</real>
+            <key>showValue</key>
+            <true/>
+            <key>key</key>
+            <string>highlightOpacity</string>
+            <key>postNotification</key>
+            <string>com.mattcmultimedia.stacks/reload</string>
+        </dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>stacks Highlight Thickness</string>
+            <key>footerText</key>
+            <string>This setting only takes effect if Curve stacks is ON.</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSSliderCell</string>
+            <key>default</key>
+            <real>2</real>
+            <key>defaults</key>
+            <string>com.mattcmultimedia.stacks</string>
+            <key>min</key>
+            <real>0</real>
+            <key>max</key>
+            <real>15</real>
+            <key>showValue</key>
+            <true/>
+            <key>key</key>
+            <string>highlightThickness</string>
+            <key>postNotification</key>
+            <string>com.mattcmultimedia.stacks/reload</string>
+        </dict>
+
+
+    </array>
+    <key>title</key>
+    <string>Selected Icon Properties</string>
+</dict>
+</plist>

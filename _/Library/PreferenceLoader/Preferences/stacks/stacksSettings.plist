@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = stacksSettings;
+	cell = PSLinkCell;
+	detail = stacksSettingsListController;
+	icon = stacks.png;
+	isController = 1;
+	label = stacks;
+    };
+}

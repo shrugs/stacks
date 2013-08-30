@@ -1,0 +1,9 @@
+debs
+Users
+stackssettings/theos
+stackssettings/.theos
+stackssettings/obj
+stackssettings
+.DS_Store
+obj
+theos

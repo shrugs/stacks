@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+    <array>
+
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>stack Launch Sensitivity</string>
+            <key>footerText</key>
+            <string>Change the responsiveness of the stack to swipes up. Left is more sensitive. Counter-intuitive, I know.</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSSliderCell</string>
+            <key>default</key>
+            <real>35</real>
+            <key>defaults</key>
+            <string>com.mattcmultimedia.stacks</string>
+            <key>min</key>
+            <real>0</real>
+            <key>max</key>
+            <real>75</real>
+            <key>showValue</key>
+            <true/>
+            <key>key</key>
+            <string>stackLaunchSensitivity</string>
+            <key>postNotification</key>
+            <string>com.mattcmultimedia.stacks/reload</string>
+        </dict>
+
+    </array>
+    <key>title</key>
+    <string>stacks Responsiveness</string>
+</dict>
+</plist>

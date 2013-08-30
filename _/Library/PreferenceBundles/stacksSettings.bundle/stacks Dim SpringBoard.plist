@@ -1,0 +1,65 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+    <array>
+
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>Dim SpringBoard</string>
+        </dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSSwitchCell</string>
+            <key>default</key>
+            <true/>
+            <key>defaults</key>
+            <string>com.mattcmultimedia.stacks</string>
+            <key>key</key>
+            <string>dimSpringBoard</string>
+            <key>label</key>
+            <string>Dim SpringBoard</string>
+            <key>postNotification</key>
+            <string>com.mattcmultimedia.stacks/reload</string>
+        </dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>Amount to Dim SpringBoard</string>
+            <key>footerText</key>
+            <string></string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSSliderCell</string>
+            <key>default</key>
+            <real>5</real>
+            <key>defaults</key>
+            <string>com.mattcmultimedia.stacks</string>
+            <key>min</key>
+            <real>0</real>
+            <key>max</key>
+            <real>1</real>
+            <key>showValue</key>
+            <true/>
+            <key>key</key>
+            <string>amountToDimBackground</string>
+            <key>postNotification</key>
+            <string>com.mattcmultimedia.stacks/reload</string>
+        </dict>
+
+
+
+    </array>
+    <key>title</key>
+    <string>stacks Dim SpringBoard</string>
+</dict>
+</plist>

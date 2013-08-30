@@ -1,0 +1,148 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+    <array>
+
+
+                <dict>
+                    <key>cell</key>
+                    <string>PSGroupCell</string>
+                    <key>label</key>
+                    <string>Vertical Spacing</string>
+                    <key>footerText</key>
+                    <string>NOTE: Press back button for typed numbers to update.</string>
+                </dict>
+                <dict>
+                    <key>cell</key>
+                    <string>PSSliderCell</string>
+                    <key>default</key>
+                    <real>0</real>
+                    <key>defaults</key>
+                    <string>com.mattcmultimedia.stacks</string>
+                    <key>min</key>
+                    <real>-100</real>
+                    <key>max</key>
+                    <real>100</real>
+                    <key>showValue</key>
+                    <true/>
+                    <key>alternateColors</key>
+                    <true/>
+                    <key>key</key>
+                    <string>deltaVerticalSpacing</string>
+                    <key>postNotification</key>
+                    <string>com.mattcmultimedia.stacks/reload</string>
+                </dict>
+
+                <dict>
+                    <key>cell</key>
+                    <string>PSEditTextCell</string>
+                    <key>default</key>
+                    <integer>0</integer>
+                    <key>defaults</key>
+                    <string>com.mattcmultimedia.stacks</string>
+                    <key>key</key>
+                    <string>deltaVerticalSpacingExact</string>
+                    <key>label</key>
+                    <string>Vertical Spacing</string>
+                    <key>postNotification</key>
+                    <string>com.mattcmultimedia.stacks/reload</string>
+                </dict>
+
+
+                <dict>
+                    <key>cell</key>
+                    <string>PSGroupCell</string>
+                    <key>label</key>
+                    <string>move entire stack up or down.</string>
+                    <key>footerText</key>
+                    <string>NOTE: Press back button for typed numbers to update.</string>
+                </dict>
+                <dict>
+                    <key>cell</key>
+                    <string>PSSliderCell</string>
+                    <key>default</key>
+                    <real>0</real>
+                    <key>defaults</key>
+                    <string>com.mattcmultimedia.stacks</string>
+                    <key>min</key>
+                    <real>-100</real>
+                    <key>max</key>
+                    <real>100</real>
+                    <key>showValue</key>
+                    <true/>
+                    <key>key</key>
+                    <string>entireStackDeltaVerticalSpacing</string>
+                    <key>postNotification</key>
+                    <string>com.mattcmultimedia.stacks/reload</string>
+                </dict>
+
+
+                <dict>
+                    <key>cell</key>
+                    <string>PSEditTextCell</string>
+                    <key>default</key>
+                    <integer>0</integer>
+                    <key>defaults</key>
+                    <string>com.mattcmultimedia.stacks</string>
+                    <key>key</key>
+                    <string>entireStackDeltaVerticalSpacingExact</string>
+                    <key>label</key>
+                    <string>Delta Vertical Placement:</string>
+                    <key>postNotification</key>
+                    <string>com.mattcmultimedia.stacks/reload</string>
+                </dict>
+
+                <!-- scale -->
+                <dict>
+                    <key>cell</key>
+                    <string>PSGroupCell</string>
+                    <key>label</key>
+                    <string>stacks Scale</string>
+                    <key>footerText</key>
+                    <string>NOTE: Press back button for typed numbers to update.</string>
+                </dict>
+                <dict>
+                    <key>cell</key>
+                    <string>PSSliderCell</string>
+                    <key>default</key>
+                    <real>1.0</real>
+                    <key>defaults</key>
+                    <string>com.mattcmultimedia.stacks</string>
+                    <key>min</key>
+                    <real>0.1</real>
+                    <key>max</key>
+                    <real>3</real>
+                    <key>showValue</key>
+                    <true/>
+                    <key>key</key>
+                    <string>stackViewScale</string>
+                    <key>postNotification</key>
+                    <string>com.mattcmultimedia.stacks/reload</string>
+                </dict>
+
+                <dict>
+                    <key>cell</key>
+                    <string>PSEditTextCell</string>
+                    <key>default</key>
+                    <integer>0</integer>
+                    <key>defaults</key>
+                    <string>com.mattcmultimedia.stacks</string>
+                    <key>key</key>
+                    <string>stackViewScaleExact</string>
+                    <key>label</key>
+                    <string>Scale Factor</string>
+                    <key>postNotification</key>
+                    <string>com.mattcmultimedia.stacks/reload</string>
+                </dict>
+
+
+
+
+    </array>
+    <key>title</key>
+    <string>stacks Spacing Settings</string>
+</dict>
+</plist>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+    <array>
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>Animation Settings</string>
+            <key>footerText</key>
+            <string>Animate Stuff!</string>
+        </dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSLinkCell</string>
+            <key>label</key>
+            <string>stacks Animation Settings</string>
+            <key>detail</key>
+            <string>stacksAnimationSettingsListController</string>
+        </dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>Selected Icon Properties</string>
+            <key>footerText</key>
+            <string>Change how the currently selected icon in the stack reacts!</string>
+        </dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSLinkCell</string>
+            <key>label</key>
+            <string>stacks Selected Icon Properties</string>
+            <key>detail</key>
+            <string>stacksSelectedIconPropertiesListController</string>
+        </dict>
+
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>Responsiveness</string>
+            <key>footerText</key>
+            <string>Change how sensitive the icon is to a swipe up!</string>
+        </dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSLinkCell</string>
+            <key>label</key>
+            <string>stacks Responsiveness</string>
+            <key>detail</key>
+            <string>stacksResponsivenessListController</string>
+        </dict>
+
+
+
+
+
+
+
+    </array>
+    <key>title</key>
+    <string>stacks Experience</string>
+</dict>
+</plist>

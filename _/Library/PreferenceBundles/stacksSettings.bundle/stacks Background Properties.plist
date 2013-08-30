@@ -1,0 +1,141 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+    <array>
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>Background Properties</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSSwitchCell</string>
+            <key>default</key>
+            <false/>
+            <key>defaults</key>
+            <string>com.mattcmultimedia.stacks</string>
+            <key>key</key>
+            <string>useBackground</string>
+            <key>label</key>
+            <string>Use Background</string>
+            <key>postNotification</key>
+            <string>com.mattcmultimedia.stacks/reload</string>
+        </dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSLinkListCell</string>
+            <key>default</key>
+            <integer>0</integer>
+            <key>defaults</key>
+            <string>com.mattcmultimedia.stacks</string>
+            <key>detail</key>
+            <string>PSListItemsController</string>
+            <key>key</key>
+            <string>backgroundColor</string>
+            <key>label</key>
+            <string>Background Color</string>
+            <key>validTitles</key>
+            <array>
+                <string>No Color</string>
+                <string>Black</string>
+                <string>Dark Gray</string>
+                <string>Light Gray</string>
+                <string>White</string>
+                <string>Regular Gray</string>
+                <string>Red</string>
+                <string>Green</string>
+                <string>Blue</string>
+                <string>Cyan</string>
+                <string>Yellow</string>
+                <string>Magenta</string>
+                <string>Orange</string>
+                <string>Purple</string>
+                <string>Brown</string>
+                <string>RANDOM!</string>
+
+            </array>
+            <key>validValues</key>
+            <array>
+                <integer>0</integer>
+                <integer>1</integer>
+                <integer>2</integer>
+                <integer>3</integer>
+                <integer>4</integer>
+                <integer>5</integer>
+                <integer>6</integer>
+                <integer>7</integer>
+                <integer>8</integer>
+                <integer>9</integer>
+                <integer>10</integer>
+                <integer>11</integer>
+                <integer>12</integer>
+                <integer>13</integer>
+                <integer>14</integer>
+                <integer>15</integer>
+            </array>
+            <key>postNotification</key>
+            <string>com.mattcmultimedia.stacks/reload</string>
+        </dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>Background Corner Roundness</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSSliderCell</string>
+            <key>default</key>
+            <real>5</real>
+            <key>defaults</key>
+            <string>com.mattcmultimedia.stacks</string>
+            <key>min</key>
+            <real>0</real>
+            <key>max</key>
+            <real>50</real>
+            <key>showValue</key>
+            <true/>
+            <key>key</key>
+            <string>backgroundRoundedness</string>
+            <key>postNotification</key>
+            <string>com.mattcmultimedia.stacks/reload</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>stack Opacity</string>
+            <key>footerText</key>
+            <string>(Set this low and turn off Use Background for a neat effect :) )</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSSliderCell</string>
+            <key>default</key>
+            <real>5</real>
+            <key>defaults</key>
+            <string>com.mattcmultimedia.stacks</string>
+            <key>min</key>
+            <real>0</real>
+            <key>max</key>
+            <real>1</real>
+            <key>showValue</key>
+            <true/>
+            <key>key</key>
+            <string>stackViewOpacity</string>
+            <key>postNotification</key>
+            <string>com.mattcmultimedia.stacks/reload</string>
+        </dict>
+
+    </array>
+    <key>title</key>
+    <string>stacks Background Properties</string>
+</dict>
+</plist>

@@ -1,0 +1,96 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+    <array>
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>Curve stacks</string>
+            <key>footerText</key>
+            <string>This option will make stacks more like the OSX equivalent. Goes well with Bottom -> Top animation and Cascade Icons On.</string>
+        </dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSSwitchCell</string>
+            <key>alternateColors</key>
+            <true/>
+            <key>default</key>
+            <false/>
+            <key>defaults</key>
+            <string>com.mattcmultimedia.stacks</string>
+            <key>key</key>
+            <string>curveStacks</string>
+            <key>label</key>
+            <string>Curve stacks</string>
+            <key>postNotification</key>
+            <string>com.mattcmultimedia.stacks/reload</string>
+        </dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>stacks Highlight Opacity</string>
+            <key>footerText</key>
+            <string>This setting only takes effect if Curve stacks is ON.</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSSliderCell</string>
+            <key>default</key>
+            <real>0.7</real>
+            <key>defaults</key>
+            <string>com.mattcmultimedia.stacks</string>
+            <key>min</key>
+            <real>0</real>
+            <key>max</key>
+            <real>1</real>
+            <key>showValue</key>
+            <true/>
+            <key>key</key>
+            <string>highlightOpacity</string>
+            <key>postNotification</key>
+            <string>com.mattcmultimedia.stacks/reload</string>
+        </dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>stacks Highlight Thickness</string>
+            <key>footerText</key>
+            <string>This setting only takes effect if Curve stacks is ON.</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSSliderCell</string>
+            <key>default</key>
+            <real>2</real>
+            <key>defaults</key>
+            <string>com.mattcmultimedia.stacks</string>
+            <key>min</key>
+            <real>0</real>
+            <key>max</key>
+            <real>15</real>
+            <key>showValue</key>
+            <true/>
+            <key>key</key>
+            <string>highlightThickness</string>
+            <key>postNotification</key>
+            <string>com.mattcmultimedia.stacks/reload</string>
+        </dict>
+
+
+
+
+    </array>
+    <key>title</key>
+    <string>stacks Curve Settings</string>
+</dict>
+</plist>

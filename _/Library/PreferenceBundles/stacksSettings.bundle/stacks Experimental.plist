@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+    <array>
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>Experimental, but mostly stable stuff. Change at your own risk.</string>
+            <key>footerText</key>
+            <string>After changing this toggle, go into Wiggle Mode for your change to become active. Stacks will only appear ABOVE a root app at this time. If wiggle mode doesn't enable changes, just respring.</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSSwitchCell</string>
+            <key>default</key>
+            <true/>
+            <key>defaults</key>
+            <string>com.mattcmultimedia.stacks</string>
+            <key>key</key>
+            <string>restrictStacksToDock</string>
+            <key>label</key>
+            <string>Restrict Stacks To Dock</string>
+            <key>postNotification</key>
+            <string>com.mattcmultimedia.stacks/reload</string>
+        </dict>
+
+
+    </array>
+    <key>title</key>
+    <string>stacks Experimental</string>
+</dict>
+</plist>

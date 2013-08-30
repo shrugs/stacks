@@ -1,0 +1,10 @@
+Package: com.mattcmultimedia.stacks
+Name: stacks
+Depends: mobilesubstrate, preferenceloader (>=2.2.0-1), applist (>=1.5.4)
+Version: 0.6.0-1
+Architecture: iphoneos-arm
+Description: create stacks of applications in the dock
+Maintainer: MattCMultimedia
+Author: MattCMultimedia
+Section: Tweaks
+Installed-Size: 152

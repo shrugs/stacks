@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+    <array>
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>Curve Settings</string>
+            <key>footerText</key>
+            <string>Make stacks emulate OSX Stacks!</string>
+        </dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSLinkCell</string>
+            <key>label</key>
+            <string>stacks Curve Settings</string>
+            <key>detail</key>
+            <string>stacksCurveSettingsListController</string>
+        </dict>
+
+
+        <!-- background properties -->
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>Background Properties</string>
+            <key>footerText</key>
+            <string>Control the background of the stack!</string>
+        </dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSLinkCell</string>
+            <key>label</key>
+            <string>stacks Background Properties</string>
+            <key>detail</key>
+            <string>stacksBackgroundPropertiesListController</string>
+        </dict>
+        <!-- dim springboard -->
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>Dim SpringBoard</string>
+            <key>footerText</key>
+            <string>Change how the SpringBoard reacts when a stack is shown!</string>
+        </dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSLinkCell</string>
+            <key>label</key>
+            <string>stacks Dim SpringBoard</string>
+            <key>detail</key>
+            <string>stacksDimSpringBoardListController</string>
+        </dict>
+        <!-- spacing settings -->
+
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>Spacing and Scale Settings</string>
+            <key>footerText</key>
+            <string>Alter the spacing, location, and scale of the stacks!</string>
+        </dict>
+
+        <dict>
+            <key>cell</key>
+            <string>PSLinkCell</string>
+            <key>label</key>
+            <string>stacks Spacing Settings</string>
+            <key>detail</key>
+            <string>stacksSpacingSettingsListController</string>
+        </dict>
+
+
+
+
+    </array>
+    <key>title</key>
+    <string>stacks Aesthetics</string>
+</dict>
+</plist>

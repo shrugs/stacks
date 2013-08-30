@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>BETA TESTERS: If you have feature suggestions or want to report bugs (or just want to say how awesome stacks is ;P ), please email me with the button below, hit me up on Twitter @MattCMultimedia, or PM me on reddit u/MattCMultimedia. It's very appreciated!</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>submitFeedback:</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Submit Beta Feedback!</string>
+		</dict>
+		<!-- INTRO TEXT -->
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Welcome to stacks. Please Enjoy.</string>
+<!-- 			<key>footerText</key>
+			<string>After changing this toggle, go into Wiggle Mode for your change to become active. Stacks will only appear ABOVE a root app at this time. If wiggle mode doesn't enable changes, just respring.</string> -->
+		</dict>
+		<!-- OTHER STUFF -->
+		<dict>
+			<key>alternateColors</key>
+			<true/>
+		    <key>cell</key>
+		    <string>PSSwitchCell</string>
+		    <key>default</key>
+		    <true/>
+		    <key>defaults</key>
+		    <string>com.mattcmultimedia.stacks</string>
+		    <key>key</key>
+		    <string>globalEnable</string>
+		    <key>label</key>
+		    <string>Enable stacks</string>
+		    <key>postNotification</key>
+		    <string>com.mattcmultimedia.stacks/reload</string>
+		</dict>
+
+
+			<dict>
+			    <key>cell</key>
+			    <string>PSGroupCell</string>
+			    <key>label</key>
+			    <string>Choose an app currently in your dock. Then choose the apps that show in its stack.</string>
+			    <key>footerText</key>
+			    <string>Note: stacks will live reload after you change a setting; no need to respring!</string>
+			</dict>
+
+
+			<!-- AppList selections part -->
+
+			<dict>
+	<!-- 			<key>postNotification</key>
+				<string>com.mattcmultimedia.stacks/reload</string> -->
+				<key>bundle</key>
+				<string>AppList</string>
+				<key>cell</key>
+				<string>PSLinkListCell</string>
+				<key>icon</key>
+				<string>stacks.png</string>
+				<key>isController</key>
+				<true/>
+				<key>label</key>
+				<string>Configure stacks</string>
+
+				<key>ALSettingsPath</key>
+				<string>/var/mobile/Library/Preferences/com.mattcmultimedia.stacks.plist</string>
+				<key>ALSettingsKeyPrefix</key>
+				<string>stacks-</string>
+				<!-- <key>ALChangeNotification</key>
+				<string>com.mattcmultimedia.stacks/reloadStacks</string> -->
+				<key>ALSettingsDefaultValue</key>
+				<string></string>
+				<key>ALAllowsSelection</key>
+				<true/>
+				<key>ALSectionDescriptors</key>
+				<array>
+					<dict>
+						<key>items</key>
+						<array></array>
+						<key>footer-title</key>
+						<string>These are the root apps. Choose one to determine which apps will be placed in its stack.</string>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>stacks Root Apps</string>
+						<key>predicate</key>
+						<string>isWebApplication = FALSE</string>
+						<key>cell-class-name</key>
+						<string>ALDisclosureIndicatedCell</string>
+						<key>icon-size</key>
+						<integer>29</integer>
+						<key>suppress-hidden-apps</key>
+						<true/>
+						<key>action</key>
+						<string>showPreferences</string>
+						<key>display-identifier-macro</key>
+						<string>@@DISPLAYIDENTIFIER@@</string>
+
+						<!-- SECOND LAYER -->
+						<key>entry</key>
+						<dict>
+							<key>bundle</key>
+							<string>AppList</string>
+							<key>isController</key>
+							<true/>
+							<key>overridePrincipalClass</key>
+							<true/>
+
+							<key>ALSettingsPath</key>
+							<string>/var/mobile/Library/Preferences/com.mattcmultimedia.stacks.stacksContents.plist</string>
+							<key>ALSettingsKeyPrefix</key>
+							<string>@@DISPLAYIDENTIFIER@@-</string>
+							<key>ALChangeNotification</key>
+							<string>com.mattcmultimedia.stacks/reloadStacks</string>
+							<key>ALSettingsDefaultValue</key>
+							<string>0</string>
+							<key>ALAllowsSelection</key>
+							<false/>
+							<key>action</key>
+							<string>showPreferences</string>
+							<key>ALSectionDescriptors</key>
+							<array>
+								<dict>
+									<key>title</key>
+									<string>Apps in Root App's stack:</string>
+									<key>cell-class-name</key>
+									<string>ALSwitchCell</string>
+									<key>icon-size</key>
+									<integer>29</integer>
+									<key>suppress-hidden-apps</key>
+									<true/>
+									<key>action</key>
+									<string>showPreferences</string>
+									<key>key</key>
+									<string>stacksContents-@@DISPLAYIDENTIFIER@@</string>
+
+
+								</dict>
+							</array>
+						</dict>
+
+					</dict>
+
+				</array>
+
+			</dict>
+
+
+		<!-- options -->
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Aesthetics</string>
+			<key>footerText</key>
+			<string>Control the looks of stacks! Contains curve, background, dimming, position, and scale settings.</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>stacks Aesthetics</string>
+			<key>detail</key>
+			<string>stacksAestheticsListController</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Experience</string>
+			<key>footerText</key>
+			<string>Control the feel of stacks! Contains animation, icon, and responsiveness settings.</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>stacks Experience</string>
+			<key>detail</key>
+			<string>stacksExperienceListController</string>
+		</dict>
+
+
+
+
+
+		<!-- FOOTER -->
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>© MattCMultimedia, AKA Shrugs 2013</string>
+			<key>footerText</key>
+			<string>HUGE, HUGE thanks to Michael P., WinneonSword, Gurudas Gandhi, and CaterpillarPromise for help beta testing!</string>
+		</dict>
+		<!-- have links for paypal, twitter, etc here -->
+		<dict>
+			<key>action</key>
+			<string>donationButton:</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Donate via PayPal</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>submitFeedback:</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Submit Feedback!</string>
+		</dict>
+		<dict>
+		    <key>cell</key>
+		    <string>PSTitleValueCell</string>
+		    <key>get</key>
+		    <string>valueForSpecifier:</string>
+		    <key>label</key>
+		    <string>stacks version</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>resetToDefaults:</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Reset stacks to Default</string>
+		</dict>
+
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<!-- <key>label</key>
+			<string>© MattCMultimedia, AKA Shrugs 2013</string> -->
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>stacks Experimental</string>
+			<key>detail</key>
+			<string>stacksExperimentalListController</string>
+		</dict>
+
+
+
+	</array>
+	<key>title</key>
+	<string>stacks</string>
+</dict>
+</plist>

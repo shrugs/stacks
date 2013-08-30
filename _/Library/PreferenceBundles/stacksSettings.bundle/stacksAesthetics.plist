@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+    <array>
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>Vertical Spacing</string>
+            <key>footerText</key>
+            <string>NOTE: press back button for this update to register. If this is set to anything other than 0, it will be used in place of the slider above. Set to 0 to use slider value.</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSSliderCell</string>
+            <key>default</key>
+            <real>0</real>
+            <key>defaults</key>
+            <string>com.mattcmultimedia.stacks</string>
+            <key>min</key>
+            <real>-100</real>
+            <key>max</key>
+            <real>100</real>
+            <key>showValue</key>
+            <true/>
+            <key>alternateColors</key>
+            <true/>
+            <key>key</key>
+            <string>deltaVerticalSpacing</string>
+            <key>postNotification</key>
+            <string>com.mattcmultimedia.stacks/reload</string>
+        </dict>
+
+    </array>
+    <key>title</key>
+    <string>stacks Aesthetics</string>
+</dict>
+</plist>
